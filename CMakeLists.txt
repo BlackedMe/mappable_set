@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.22.1)
+project(MappableSet)
+file(GLOB MappableSet src/mappable_set/*.cpp)
+add_library(main SHARED ${MappableSet})
+target_include_directories(main PRIVATE "include")
